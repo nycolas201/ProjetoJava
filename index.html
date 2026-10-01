@@ -1,0 +1,64 @@
+<!DOCTYPE html> <html lang="pt"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Utilizadores | JSONPlaceholder</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head> <body>
+<header class="hero">
+    <div class="hero-content">
+        <span class="badge">API • JSONPlaceholder</span>
+
+        <h1>Lista de Utilizadores</h1>
+
+        <p>
+            Consulta e pesquisa todos os utilizadores disponíveis.
+        </p>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="controlos">
+
+        <div class="pesquisa-container">
+            <span class="icone-pesquisa">⌕</span>
+
+            <input
+                type="text"
+                id="campoPesquisa"
+                placeholder="Pesquisar por nome ou cidade..."
+                autocomplete="off"
+            >
+        </div>
+
+        <div class="contador-box">
+            <strong id="contador">A carregar...</strong>
+            <span>utilizadores encontrados</span>
+        </div>
+
+    </section>
+
+    <section id="listaUtilizadores" class="lista-utilizadores">
+        <!-- Os utilizadores serão colocados aqui pelo JavaScript -->
+    </section>
+
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>A carregar utilizadores...</p>
+    </div>
+
+    <div id="mensagemSemResultados" class="sem-resultados">
+        <div class="sem-resultados-icon">🔎</div>
+        <h2>Nenhum utilizador encontrado</h2>
+        <p>Tenta pesquisar por outro nome ou cidade.</p>
+    </div>
+
+</main>
+
+<footer>
+    <p>Projeto desenvolvido com HTML, CSS e JavaScript</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body> </html>
